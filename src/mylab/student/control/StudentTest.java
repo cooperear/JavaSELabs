@@ -15,7 +15,7 @@ public class StudentTest {
 		SihoonPark.setMajor("AI À¶ÇÕÀü°ø");
 		System.out.println(
 				SihoonPark.getName() + SihoonPark.getStudentId() + SihoonPark.getMajor() + SihoonPark.getGrade());
-
+//
 		SihoonPark.setName("ÇÏ´Ãº¸¸®");
 		System.out.println(
 				SihoonPark.getName() + SihoonPark.getStudentId() + SihoonPark.getMajor() + SihoonPark.getGrade());
