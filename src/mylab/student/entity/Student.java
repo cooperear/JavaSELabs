@@ -6,7 +6,7 @@ public class Student {
 	private String studentId, name, major;
 	private int grade;
 
-	public Student(String studentId, String name, String major, int grade) {
+	public Student(String studentId, String name, String major, int grade) throws InvalidGradeException {
 		super();
 
 		if (grade > 0 && grade < 5) {
@@ -48,7 +48,7 @@ public class Student {
 		return grade;
 	}
 
-	public void setGrade(int grade) {
+	public void setGrade(int grade) throws InvalidGradeException {
 		if (0 < grade && grade < 5) {
 			this.grade = grade;
 		} else {

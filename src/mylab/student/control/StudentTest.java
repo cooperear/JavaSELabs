@@ -12,7 +12,7 @@ public class StudentTest {
 		System.out.println(
 				SihoonPark.getName() + SihoonPark.getStudentId() + SihoonPark.getMajor() + SihoonPark.getGrade());
 
-		SihoonPark.setMajor("AI À¶ÇÕÀü°ø");
+		SihoonPark.setMajor("AIÀ¶ÇÕÀü°ø");
 		System.out.println(
 				SihoonPark.getName() + SihoonPark.getStudentId() + SihoonPark.getMajor() + SihoonPark.getGrade());
 //

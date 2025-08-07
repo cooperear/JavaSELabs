@@ -1,20 +1,22 @@
 package workshop.person.entity;
 
-
-
 public class PersonEntity {
 	private String name;
 	private char gender;
 	private String ssn;
 	private String address;
 	private String phone;
+	
+	//default constructor
+	public PersonEntity() {
+		
+	}
 
-	public PersonEntity() {}
-
+	//overloading constructor
 	public PersonEntity(String name, String ssn, String address, String phone) {
-		super();
 		this.name = name;
 		this.ssn = ssn;
+		setSsn(ssn);
 		this.address = address;
 		this.phone = phone;
 	}
@@ -41,16 +43,14 @@ public class PersonEntity {
 
 	public void setSsn(String ssn) {
 		this.ssn = ssn;
-		if (ssn != null) {
+		if(ssn != null) {
 			char genderNum = ssn.charAt(6);
-			if (genderNum == '1' || genderNum == '3') {
-				setGender('³²');
-			} else {
-				setGender('¿©');
+			if(genderNum == '1' || genderNum == '3') {
+				setGender('ë‚¨');
+			}else {
+				setGender('ì—¬');
 			}
-
 		}
-
 	}
 
 	public String getAddress() {
@@ -67,6 +67,6 @@ public class PersonEntity {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
-	}
-
+	}	
+	
 }
