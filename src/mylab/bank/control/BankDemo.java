@@ -39,14 +39,23 @@ public class BankDemo {
 		System.out.println("------예외처리--------");
 		try {
 
-			bank.withdraw("CH1002", 500000);
+			bank.withdraw("SV1002", 50099);
 		} catch (Exception E) {
+			
 			System.out.println(E.getMessage());
-
 		}
 		try {
 
-			bank.withdraw("CH1002", 500000);
+			bank.withdraw("CH1001", 14000);
+		} catch (Exception E) {
+			
+			System.out.println(E.getMessage());
+		}
+		
+		
+		try {
+
+			bank.withdraw("SV999", 500000);
 		} catch (Exception E) {
 			System.out.println(E.getMessage());
 

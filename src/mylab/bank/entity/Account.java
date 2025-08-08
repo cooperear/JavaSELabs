@@ -37,7 +37,7 @@ public class Account {
 	
 	public void withdraw(double credit) throws InsufficientBalanceException{
 		if (credit > this.balance) {
-			throw new InsufficientBalanceException("그만큼의 돈은 없어요");
+			throw new InsufficientBalanceException("그만큼의 돈은 없어요 현재 잔액:"+this.balance);
 		}else {
 			this.balance-=credit;
 			System.out.println(credit + " 출금완료, 현재 잔액 : " +this.balance);
